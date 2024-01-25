@@ -1,6 +1,6 @@
 import math
 import random
-
+'''
 # 1. tehtävä
 nimi = input("nimesi? ")
 print("Terve, " + nimi + "!")
@@ -31,7 +31,7 @@ summa = nro1 + nro2 + nro3
 tulo = nro1 * nro2 * nro3
 keskiarvo = (nro1 + nro2 + nro3) / 3
 print("Antamiesi numeroiden summa = " + str(summa) + ". Sekä numeroiden tulo = " + str(tulo) + ". Sekä numeroiden keskiarvo = " + str(keskiarvo))
-
+'''
 # 5. tehtävä
 lei = input("Anna leiviskät. \n")
 nau = input("Anna naulat. \n")
