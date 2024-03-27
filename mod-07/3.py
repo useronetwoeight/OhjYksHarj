@@ -13,7 +13,7 @@ while True:
         print("Haetaan olemassaolevan lentokentän tietoja. ")
         qwerty = input("Lentoaseman ICAO-koodi: ")
         if qwerty in lista:
-            print (qwerty + " lentoaseman nimi: " + lista[qwerty])
+            print(qwerty + " lentoaseman nimi: " + lista[qwerty])
         else:
             print("Ei löydy kyseistä lentoasemaa")
     elif wiguel == 3:
