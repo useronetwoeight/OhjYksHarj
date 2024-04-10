@@ -1,8 +1,8 @@
 import requests
 
 
-def hae_saatiedot(paikkakunta, api_avain):
-    url = f"https://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={api_avain}"
+def hae_saatiedot(paikkakunta, api):
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={paikkakunta}&appid={api}"
     vastaus = requests.get(url)
     data = vastaus.json()
     if vastaus.status_code == 200:
@@ -16,9 +16,9 @@ def hae_saatiedot(paikkakunta, api_avain):
 
 
 paikkakunta = input("Paikkakunta: ")
-api_avain = input("OpenWeatherMap API key: ")
+api = input("OpenWeatherMap API key: ")
 
-kuvaus, lampo = hae_saatiedot(paikkakunta, api_avain)
+kuvaus, lampo = hae_saatiedot(paikkakunta, api)
 if kuvaus is not None and lampo is not None:
     print(f"Sää paikkakunnalla {paikkakunta}:")
     print(f"Säätila: {kuvaus}")
